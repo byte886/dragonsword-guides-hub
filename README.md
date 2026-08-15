@@ -72,7 +72,7 @@ new-chat/
 - `js/main.js`：全局脚本（主题切换、语言切换、锚点导航等）
 - `assets/`：图片资源
 - `sitemap.xml`、`robots.txt`：SEO文件
-- `prd.md`、`dev-requirements.md`、`final-audit-report.md`：项目文档
+- PRD、开发要求、审核报告等文档见 `06-project-continuity/06~09`
 
 ### 05-operation-guides/
 **可复现的操作指南**，不是结论报告。新会话的AI照着步骤可以从零操作。
