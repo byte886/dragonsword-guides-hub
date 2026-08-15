@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>3候选游戏词判断表</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            padding: 32px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 14px 16px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .row-label {
+            text-align: left;
+            font-weight: 500;
+            color: #555;
+            background: #f8f9fa;
+            width: 180px;
+        }
+        .blur {
+            filter: blur(8px);
+            user-select: none;
+            color: #666;
+            font-weight: 600;
+        }
+        .do {
+            color: #10b981;
+            font-weight: 600;
+        }
+        .candidate {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+        .dont {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        .highlight {
+            background: #ecfdf5 !important;
+        }
+        .note {
+            margin-top: 24px;
+            padding: 16px;
+            background: #f0f9ff;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #0369a1;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>3候选游戏词判断表</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="row-label"></th>
+                    <th>候选词 1</th>
+                    <th>候选词 2</th>
+                    <th>候选词 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-label">游戏名</td>
+                    <td class="blur">██████ ███████████</td>
+                    <td>Mistfall Hunter</td>
+                    <td>Corsair Cove</td>
+                </tr>
+                <tr>
+                    <td class="row-label">Trends 趋势<br>（涨/平/跌）</td>
+                    <td>涨（健康企稳）</td>
+                    <td>涨（爆发式增长）</td>
+                    <td>跌（冲高后快速回落）</td>
+                </tr>
+                <tr>
+                    <td class="row-label">KD 难度</td>
+                    <td>14（很低）</td>
+                    <td>27（较低）</td>
+                    <td>18（低）</td>
+                </tr>
+                <tr>
+                    <td class="row-label">细分关键词数量</td>
+                    <td>多<br>（2,436个语句匹配<br>77个问题查询）</td>
+                    <td>非常多<br>（3,234个语句匹配<br>197个问题查询）</td>
+                    <td>少<br>（661个语句匹配<br>22个问题查询）</td>
+                </tr>
+                <tr>
+                    <td class="row-label">首页竞争难度</td>
+                    <td>低<br>（0个大站，1个新攻略站）</td>
+                    <td>中等偏低<br>（0个大站，0个攻略站）</td>
+                    <td>中等<br>（1个大站Wikipedia）</td>
+                </tr>
+                <tr class="highlight">
+                    <td class="row-label">做/不做</td>
+                    <td class="do">✅ 做</td>
+                    <td class="candidate">⚠️ 候选（风险高）</td>
+                    <td class="dont">❌ 不做</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="note">
+            <strong>最终判定：</strong>选择候选词1作为主词。理由：口碑好（87%特别好评）、竞争小（仅1个新攻略站DR35）、KD很低（14）、长尾词充足，适合新手长期运营。
+        </div>
+    </div>
+</body>
+</html>

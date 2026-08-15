@@ -1,0 +1,107 @@
+AI出海游戏热词站21天实战项目全手册（关卡6）
+前置核心作业规则（预备）
+任务目标：根据 GSC 数据做第一次复盘，补 2-3 个页面，决定这个站是继续、换词、还是升级。
+任务描述：
+1.打开 GSC，看网站的展示、点击、搜索词和页面表现。
+2.从已经出现的搜索词里找信号，判断用户还在搜哪些问题。
+3.规划 2-3 个具体补页方向，不要只写“继续优化”。
+4.根据当前数据判断：继续补页面、换词重新做，还是考虑升级工具站。
+5.如适合广告变现，可以开始了解 AdSense 或 Adsterra 的接入路径。
+6.填一次数据复盘表，让下一步动作具体下来。
+本关是必修篇的最后一关，本船 21 天内的必修完成标准是“完成 GSC/GA 接入、确认开始收集数据，并建立首次复盘记录”；
+有有效搜索词时再补页，没有数据时只做技术排查并约定上线后第 7 天、第 14 天复盘。不要要求大家在数据尚未产生时判断换词或升级。
+本关需提交作业：
+•数据复盘表截图或文档截图（必填）
+需要包含网站链接、GSC 展示/点击数据、（新出现的搜索词、下一步判断、理由和具体动作）（21天内没有这些内容那就不写）。
+ps：有有效搜索词时再补页，没有数据时只做技术排查并约定上线后第 7 天、第 14 天复盘。不要要求大家在数据尚未产生时判断换词或升级
+数据复盘表模板：
+【必须提交】
+我的站：[网站链接]
+GSC 总展示：[数字]  总点击：[数字]
+【以下内容在21天内没有可不提交】
+出现了哪些新搜索词：
+下一步判断：继续补 / 换词 / 考虑升级工具站
+理由：
+具体动作：
+•2-3 个补页计划（选填）
+写清楚准备补哪些页面，每个页面对应什么搜索词或用户问题。
+•分享一下这关最大的收获，或者你遇到的卡点、怎么解决的（必填）
+作业提交链接： https://scys.com/activity/10092/task/88084
+PS：这一关不是为了证明网站已经成功，而是学会用数据决定下一步。哪怕数据很少，也要练一次复盘和决策。
+01. 具体步骤
+游戏站不是一次写完的。用户的实际搜索行为会不断暴露新的需求——GSC 里出现的新搜索词，就是你下一步要做的页面。而且，大部分游戏站不会长期赚钱，你要学会用数据决定"继续还是换"，而不是靠感觉坚持。
+1. 看 GSC 数据，找信号
+每次打开 GSC，盯着这五个数看：
+•展示量：你的页面在搜索结果里出现了多少次。这个数在涨 = 词流量在上升
+•点击量：多少人从搜索结果点进了你的网站
+•平均排名：你的页面排第几位。前十才有意义，第三页以后基本没人看
+•平均点击率：受排名直接影响，排名越靠前、点击率越高
+•搜索词报告：用户搜了什么词看到你的。这个最重要——你会发现很多自己没想到的词
+根据数据做具体动作：
+2. 补页面，不要开新站
+拿到数据后，如果这个词还有流量，第一反应应该是"我这个站还缺什么页面"，而不是"我再开一个新站"。
+•用户搜了哪些新词，gsc 流量很大，但你没做页面 → 补页面
+•哪些页面表现好 → 围绕它做更多关联内容
+•哪些页面没被收录 → 检查、修改、重新提交（也有可能是用户搜索确实少）
+游戏站不是一次写完的——而是随着搜索数据，逐渐补页面：
+•出现"xxx how to get character X"→ 补一个获取攻略页
+•出现"xxx best build for Y"→ 补一个配装推荐页
+•出现"xxx codes 2026"→ 更新 codes 页，加上年份
+了解 AdSense 广告变现：具体申请详情可参考往期《AI 应用丨游戏站》航海：
+https://scys.com/course/detail/87?chapterId=3566
+AdSense 是 Google 的广告系统。你把广告位放在网站上，Google 自动匹配广告，有人看或点你就赚钱。
+什么时候接入：有一定流量后再接。生财里有人建议日访问 > 500 时效果最好。不够这个量也能接，只是收入很低。日访问几百的时候，AdSense 收入可能每天只有几毛到几块钱。
+怎么接入：
+1.注册 adsense.google.com
+2.获取广告代码，放在网站页面里
+3.Google 审核（几天到几周不等）
+4.审核通过后，广告开始展示
+审核经常被拒的原因：内容太少、内容质量差、缺隐私页。不要只做一个光秃秃的单页就去申请 AdSense——至少有首页、关于页（/about）、联系页（/contact）、一些内容页面，让网站看起来是一个正经网站而不是临时页面。被拒几次是正常的，补内容再提交。
+收款方式：
+•电汇到国内银行卡：固定手续费较高，适合大金额
+•虚拟货币方式：约 2% 手续费，适合中小金额
+AdSense 之外补一个更易上手的广告：Adsterra
+新站早期流量小、AdSense 审核严，不一定能过审。
+Adsterra 是另一个广告网络，门槛比 AdSense 低、审核快，新站可以先接它赚第一笔收入，等流量起来再切 AdSense 或两个一起用。
+4. Adsterra 怎么接入
+4.1  去 adsterra.com 注册账号（免费）
+注册一个 Publisher 账号、完成邮箱验证；
+4.2 创建广告位，选广告形式——新手推荐「Native Banner」（原生横幅，体验温和）或「Banner」（最简单）；
+先别选 Popunder 弹窗，太激进、影响用户体验；
+4.3 等待审核
+Adsterra 的审核非常快，通常 1-3 分钟 就能通过。
+审核通过后，你就可以为该域名创建 更多的广告单元了。
+4.4 获取广告 Key
+Banner 类型
+Native Banner 类型
+每个广告单元创建后，Adsterra 会分配一个唯一 Key（32 位十六进制字符串），用于构建广告加载 URL。
+你需要让大模型，在代码中引用这些 脚本，appkey 可以通过环境变量传入
+4.5. 广告开始展示，有人看或点就有收入
+AdSense 和 Adsterra 怎么选：
+- AdSense：单价高、长期更划算，但审核严、要网站内容够多够正经，适合流量起来之后（审核周期约 1-2 个月）
+- Adsterra：门槛低、审核快、新站就能接，单价稍低，适合早期先跑通变现
+建议路径：
+新站先用 Adsterra 起步 → 日访问过千、AdSense 能过审了再切 AdSense（或两个一起用——AdSense 放主力广告位，Adsterra 放次要位补充收入）
+5. 判断下一步
+根据过去几关的数据，做一个明确的判断：
+继续补这个站：数据在涨、有展示有点击、甚至有广告收入
+•补更多页面，扩大关键词覆盖
+•考虑接入 AdSense
+•把建站流程做成自己的模板，下一个站更快上线
+换下一个游戏词：有数据但排名不理想——有展示没点击、做了几个星期还是每天只有个位数访问
+•保留这个站的模板和流程经验
+•用同样流程换一个游戏词，第二次会快很多
+•检查是不是内容没真正回答用户的问题
+•不丢人——大部分站都不赚钱
+数据复盘表（对着填）
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="6CEAE47F"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/><w:rPr><w:b/><w:bCs/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:b/><w:bCs/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>记录
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="7DFF86E3"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>统计时间段
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="3B391D9D"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>总展示量
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="020F8AFF"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>总点击量
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="1751C1E8"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>平均排名
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="5D10554B"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>前 5 个搜索词
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="3E857016"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>1. 2. 3. 4. 5.
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="24313E42"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>出现了哪些你没做页面的词
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="3A55B44B"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>哪些页面没被收录
+<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="130D91FC"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>下一步补哪 23 个页面
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:left w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:bottom w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/><w:right w:val="single" w:color="CCCCCC" w:sz="8" w:space="0"/></w:tcBorders><w:shd w:val="clear"/><w:tcMar><w:top w:w="120" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="120" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="4496C940"><w:pPr><w:keepNext w:val="0"/><w:keepLines w:val="0"/><w:widowControl/><w:suppressLineNumbers w:val="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体" w:hAnsi="宋体" w:eastAsia="宋体" w:cs="宋体"/><w:kern w:val="0"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:bdr w:val="none" w:color="auto" w:sz="0" w:space="0"/><w:lang w:val="en-US" w:eastAsia="zh-CN" w:bidi="ar"/></w:rPr><w:t>1. 2. 3.

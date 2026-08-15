@@ -1,0 +1,100 @@
+AI出海游戏热词站21天实战项目全手册（关卡1）
+前置核心作业规则（预备）
+1. 必做练习：筛选并检查3个游戏候选热词，完成《3候选游戏词判断表》（作业必交）；
+2. 进阶可选：从3个候选词中敲定1个最优主词，并写出3条核心判定理由（热度证据、竞争机会、信息来源可行性）；
+3. 新手豁免：纯新手可暂时跳过「敲定主词、购买域名」步骤，优先完成表格练习、熟悉判断逻辑；
+4. 作业提交：以判断表截图为唯一提交模板。
+关卡1 核心实操：游戏热词完整选词流程
+核心认知：游戏站成败核心在于选词。词不对——没人搜、竞争太强、信息获取困难——后续建站、写内容、做外链都会极度吃力。新手最高频两大致命错误：①凭感觉想到一个词就直接建站；②分不清社交媒体热度和Google真实搜索热度，踩中大量陷阱词。
+选词唯一核心铁律：只认 Google 主动搜索热度。TikTok、X、YouTube、Discord 刷屏热闹，不代表有人会主动去谷歌搜资料，社媒热 ≠ 搜索热，坚决不做虚假热度词汇。
+标准实操链路：批量收集候选词 → 多维度工具验证 → 人工首页竞争校验 → 筛选可做词 → 敲定主词 → 域名规划与购买 → 域名托管解析。不单点盲选、不主观预判，全部以数据 + 页面事实为准。
+一、第一步：批量挖出3-5个候选游戏词（解决“不知道搜什么”）
+新手选词最大卡点：打开谷歌无从下手。正确做法是从官方榜单、热门社区“捞现成新词”，只挑增量游戏，不自己空想。
+1. 两大权威捞词来源
+来源一：海外游戏数据榜单平台（找新品、增量热游）
+优先查看平台「新品榜、上新热销榜、在线人数上升榜」，专门筛选：刚上线不久、玩家数据持续上涨、处于热度爬升期的游戏。新词竞争空白大，大站还未铺满内容，新手最好切入。
+参考平台地址：
+https://steamdb.info
+https://www.igdb.com
+来源二：YouTube 预售/上新游戏视频（抓早期红利新词）
+YouTube 搜索固定关键词：gameplay trailer
+筛选近期预售、刚发布、测评刷屏的游戏，这类游戏处于热度启动期，谷歌搜索需求正在快速上涨，是新手最优潜力词池。
+2. 候选词取舍标准
+✅ 优先选：短期新上线、玩家活跃度持续上涨、有版本更新/活动迭代、有持续讨论度
+❌ 坚决弃：上线多年热度固化、无新增玩家、仅短视频爆火无持续搜索、热度断崖下跌
+二、第二步：判断单个词能不能做（核心得分步骤）
+捞到游戏名后，必须依次完成「趋势真伪验证 → KD难度验证 → 细分需求验证 → 首页竞争验证」，全部达标才可进入候选名单。
+1. Google Trends 热度真伪验证（避坑陷阱词）
+工具特性：Google Trends 只展示 0-100 相对热度比值，不显示真实搜索量，只看曲线高低一定会误判，必须用「对标词估算法」。
+固定对标基准词：GPTs（行业通用参考，日均搜索 3000-5000，稳定基准）
+热度量化判断规则：
+① 游戏词热度 ≈ GPTs 的 1/3：有稳定基础搜索量，可备选；
+② 游戏词热度 ≈ GPTs：热度优质，流量稳定，适合做主词；
+③ 游戏词热度大幅超过 GPTs：强趋势爆发新词，优先重点选择。
+可用查询链接：
+老版：https://trends.google.com/trends/explore?hl=zh-CN
+新版：https://trends.google.com/explore?geo=Worldwide&date=today%201-m
+标准查询设置：地区选「全球」、时间选「近30天」，判断短期增量趋势。
+趋势线型避坑口诀（必背）：
+① 曲线持续缓步上行：增量新词、有机会、保留；
+② 曲线持平 / 持续下行：搜索用户递减、热度衰退、直接淘汰；
+③ 山峰式骤涨骤跌（短期爆火后快速回落）：典型陷阱词，无长期搜索需求，坚决不做；
+④ 7天内快速拉升的全新游戏词：最优赛道，谷歌搜索结果稀疏、无大站垄断，新手极易超车排名。
+工具适配说明：Google Trends 当前存在 robots.txt 访问限制，无法自动抓取数据，实操全部以「手动打开网页肉眼查看曲线+对比GPTs热度」为准，不影响作业与判断准确性。
+2. SimilarWeb 双维度校验（KD难度 + 细分需求体量）
+工具地址：similarweb.com
+维度一：KD 关键词难度（0-100）
+新手黄金标准：KD 0-30 可做；KD＞40 直接放弃。KD越高代表大站权重越高、内容铺垫越久，新手无法正面竞争。
+维度二：细分长尾关键词数量
+观察该游戏衍生需求丰富度：兑换码、报错闪退修复、新手入门教程、角色出装配队、任务攻略、模组安装、汉化问题、常见bug解决等。长尾词越多，可搭建的页面矩阵越丰富，后期流量天花板越高。
+3. 谷歌首页人工竞争终判（决定能不能拿到排名）
+工具数据仅作参考，最终能不能做，只看谷歌首页前十站点质量。手动搜索游戏主词，识别5类竞品，快速判断竞争压力。
+首页五类竞品层级（从强到弱）
+① Fandom / Wiki 百科大站：权重极高、词条全覆盖，主词几乎无法竞争，首页大量此类站直接弃词；
+② 游戏官方 Wiki：权威准确，但大多只放基础资料，兑换码、最新攻略、报错修复更新不及时，存在新手切入缝隙；
+③ IGN、GameSpot 等头部游戏媒体：权重高，但内容偏新闻评测，单一游戏深度细分内容少；
+④ Pro Game Guides、Game8 等垂直攻略站：你的对标竞品，专做 codes、tierlist、流程攻略，可参考其页面结构；
+⑤ Steam商店页、媒体单篇评测（普通内页）：内容浅、更新慢、无专项运营，是新手最容易超车的页面。
+竞争判定结论：前十多顶级垂直攻略站/Fandom → 竞争高、放弃；前十多普通内页、零散浅内容、过时内容 → 竞争低、可入局。
+辅助插件SiteData 竞品数据可视化
+插件作用：谷歌搜索页直接查看竞品月流量、域名年龄、DR权重，快速判断对手实力，不用盲判竞争。
+插件下载地址：https://chromewebstore.google.com/detail/sitedata-traffic-checkera/emeakbgdecgmdjgegnejpppcnkcnoaen?utm_source=item-share-cb
+工具适配说明：该插件页面存在robots访问限制，以手动安装、浏览器本地生效使用为准。
+判断表（作业）
+<w:tblPr><w:tblStyle w:val="2"/><w:tblW w:w="8280" w:type="dxa"/><w:jc w:val="center"/><w:tblBorders><w:top w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/><w:left w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/><w:bottom w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/><w:right w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/><w:insideH w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/><w:insideV w:val="single" w:color="DEE0E3" w:sz="0" w:space="0"/></w:tblBorders><w:tblLayout w:type="autofit"/><w:tblCellMar><w:top w:w="0" w:type="dxa"/><w:left w:w="10" w:type="dxa"/><w:bottom w:w="0" w:type="dxa"/><w:right w:w="10" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w="3460"/><w:gridCol w:w="964"/><w:gridCol w:w="964"/><w:gridCol w:w="964"/><w:gridCol w:w="964"/><w:gridCol w:w="964"/></w:tblGrid><w:tr w14:paraId="3C6E519D"><w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="2DA2FA89"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>判断维度
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="32BA653F"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>候选游戏词1
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="4311B9B8"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>候选游戏词2
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="47E3A4DF"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>候选游戏词3
+<w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="6A7F0740"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/><w:rPr><w:rFonts w:hint="eastAsia" w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/><w:lang w:eastAsia="zh-CN"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>候选游戏词4
+<w:tcPr><w:tcW w:w="964" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="593C2755"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/><w:rPr><w:rFonts w:hint="eastAsia" w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/><w:lang w:val="en-US" w:eastAsia="zh-CN"/></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>候选游戏词5
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="1F70BBC4"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>游戏名
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="50885DD3"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>Google Trends走势（涨/平/跌）+ 热度说明（区分搜索/社媒热度）
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="1A75AEBD"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>KD关键词难度
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="477AE850"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>可挖掘细分长尾关键词数量（多/中/少）
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="470985AA"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>谷歌首页竞争难度（低/中/高）
+<w:trPr><w:trHeight w:val="0" w:hRule="atLeast"/><w:tblHeader/><w:jc w:val="center"/></w:trPr><w:tc><w:tcPr><w:tcW w:w="3460" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="30" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr><w:p w14:paraId="0D048CE9"><w:pPr><w:snapToGrid w:val="0"/><w:spacing w:before="120" w:after="120" w:line="288" w:lineRule="auto"/><w:ind w:left="0"/><w:jc w:val="left"/></w:pPr><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="等线" w:cs="Arial"/><w:sz w:val="22"/></w:rPr><w:t>最终判定（做/不做）
+三、候选词最终入围标准（全部满足才可备选）
+1. Google Trends 近30天持续上涨，对标GPTs热度合格，无暴跌陷阱；
+2. SimilarWeb KD 难度 0-30，适配新手竞争；
+3. 细分长尾关键词充足，可搭建多页面矩阵；
+4. 谷歌首页无顶级大站垄断，存在明显排名缝隙；
+5. 全网素材充足，可稳定搜集攻略、兑换码、问题解决方案用于AI生成内容。
+四、第三步：敲定主词 + 域名选型规则
+1. 先验证、后买域：确认词可做，再购入域名，禁止凭预感批量囤域名；
+2. 后缀优选顺序：.wiki ＞ .com / .org / .net / .online / .site；
+3. 高危避坑后缀：严禁使用 .cc、.xyz 等灰产高频后缀，搜索引擎天然降权。
+五、第四步：Spaceship 域名购买（新手可跳过）
+购买平台：spaceship.com，支持支付宝，适配国内用户；
+新手豁免策略：纯新手可以暂时跳过购买域名，优先练熟选词、建站整套流程，熟练后再实操购域抢词。
+六、第五步：Cloudflare 域名绑定&DNS解析（新手可跳过）
+托管平台：cloudflare.com（免费方案，稳定免费托管全站）
+标准完整操作流程
+1. 登录 Cloudflare 后台，点击【Add】添加站点，输入已购域名；
+2. 选择免费 Free Plan，进入配置页面；
+3. 删除系统自带 A 记录、CNAME 记录（无记录可忽略），点击继续激活；
+4. 复制页面生成的两组 Nameserver 服务器地址备用；
+5. 登录 Spaceship 域名后台，进入「nameserver&DNS」设置，选择更换服务器；
+6. 删除原有默认服务器地址，粘贴 Cloudflare 新 Nameserver 并保存；
+7. 进入 Spaceship 高级 DNS 设置，确认 DNS Records 数量为 0；
+8. 返回 Cloudflare 后台，点击【check nameservers now】，等待约10分钟系统同步；
+9. 页面出现绿色对勾，即代表域名解析、托管绑定全部成功。

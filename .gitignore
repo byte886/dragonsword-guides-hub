@@ -1,0 +1,10 @@
+
+# Playwright runtime files
+.playwright-cli/
+.playwright-mcp/
+
+# macOS system files
+.DS_Store
+
+# Node
+node_modules/
