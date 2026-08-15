@@ -11,6 +11,7 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 ```
 01-project-tutorials/   关卡教程文本
 04-website/             网站代码（纯静态 HTML，5 语言，115 个文件）
+05-operation-guides/    操作手册（部署、GA/GSC、选词、素材等）
 06-project-continuity/  AI 上下文交接指南
 07-homework/            关卡作业复盘
 .agents/skills/         AI 技能文档（playwright-cli、playwright-extension）
@@ -60,8 +61,8 @@ npx playwright cli -s=ga detach      # 用完断开
 
 - 纯静态 HTML/CSS/JS，无构建步骤，无框架
 - GA 跟踪代码统一在 `js/analytics.js` 维护，所有 HTML 通过 `<script defer src=".../js/analytics.js"></script>` 引用
-- canonical URL 统一为 `https://ds-guides.wiki/`
-- 多语言用子目录：`/en/`、`/zh/`、`/ko/`、`/ru/`、`/ja/`
+- canonical URL 统一为 `https://ds-guides.wiki/`（首页）；子页面必须包含语言目录，如 `https://ds-guides.wiki/en/beginner-guide.html`
+- 多语言用子目录：`/en/`、`/zh/`、`/ko/`、`/ru/`、`/ja/`（英文首页在根目录 `/`，英文子页面在 `/en/`）
 - 修改前先备份或确认 git 状态，避免覆盖用户工作
 
 ## 部署架构（Always）
@@ -70,7 +71,9 @@ npx playwright cli -s=ga detach      # 用完断开
 - **Cloudflare**：DNS 管理（Free 计划），代理状态为 DNS only（灰色云），不开启 Proxied
 - **Spaceship**：域名注册商，nameserver 已指向 Cloudflare（celeste/thaddeus.ns.cloudflare.com）
 - DNS 记录：A 记录 @ → 216.198.79.1；CNAME www → cname.vercel-dns.com
-- 域名：ds-guides.wiki（Vercel 中 ds-guides.wiki 308 重定向到 www.ds-guides.wiki）
+- 域名：ds-guides.wiki（apex 为主域名直接服务；www 308 重定向到 ds-guides.wiki）
+- **GA**：Measurement ID G-6XQCHB1YYV，代码在 `js/analytics.js`
+- **GSC**：资源类型 sc-domain:ds-guides.wiki，通过 Cloudflare Domain Connect 验证，sitemap 已提交
 
 ## Git 提交规范（Always）
 

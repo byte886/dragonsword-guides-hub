@@ -1,7 +1,7 @@
 # Deployment Guide: Vercel + Cloudflare + Spaceship
 
-> This guide covers how the ds-guides.wiki site is deployed across three platforms.
-> Official docs: [Vercel custom domains](https://vercel.com/docs/domains/set-up-custom-domain) | [Cloudflare full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup) | [Spaceship nameservers](https://www.spaceship.com/knowledgebase/connect-domain-to-spaceship-hosting/)
+> This guide covers how the ds-guides.wiki site is deployed across three platforms, plus GA/GSC setup.
+> Official docs: [Vercel custom domains](https://vercel.com/docs/domains/set-up-custom-domain) | [Cloudflare full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup) | [Spaceship nameservers](https://www.spaceship.com/knowledgebase/connect-domain-to-spaceship-hosting/) | [GA4 setup](https://support.google.com/analytics/answer/9304153) | [GSC domain verification](https://support.google.com/webmasters/answer/9008080)
 
 ---
 
@@ -69,11 +69,16 @@ User types ds-guides.wiki
 1. Go to Project Settings → Domains
 2. Enter `ds-guides.wiki` and click Add
 3. Vercel automatically adds both:
-   - `ds-guides.wiki` (apex, with 308 redirect to www by default)
-   - `www.ds-guides.wiki` (production)
-4. Note the DNS records Vercel requires (click "View DNS configuration"):
+   - `ds-guides.wiki` (apex, Production — primary domain)
+   - `www.ds-guides.wiki` (initially Production; change to 308 redirect to apex)
+4. **Set apex as primary domain**:
+   - Click Edit on `ds-guides.wiki` → select "Connect to an environment" → Production → Save
+   - Click Edit on `www.ds-guides.wiki` → select "Redirect to Another Domain" → 308 Permanent Redirect → target `ds-guides.wiki` → Save
+5. Note the DNS records Vercel requires (click "View DNS configuration"):
    - **A record**: `@` → `216.198.79.1`
-   - **CNAME**: `www` → `cname.vercel-dns.com` (legacy but still works)
+   - **CNAME**: `www` → `cname.vercel-dns.com` (legacy but still works; Vercel may recommend a newer value like `df9ecd0750052516.vercel-dns-017.com`)
+
+**Domain redirect logic**: apex (`ds-guides.wiki`) serves the site directly; www 308-redirects to apex. All canonical URLs use `https://ds-guides.wiki/` (no www).
 
 **Important**: Vercel's displayed IP may change. Always copy the exact value from Vercel's "View DNS configuration" panel, not from this guide.
 
@@ -135,6 +140,50 @@ After the scan, review and edit records:
 3. You can manually trigger a check: Cloudflare Overview → "Check nameservers now"
 4. Once active, Cloudflare sends a confirmation email
 
+### Step 7: Set Up Google Analytics (GA4)
+
+1. Go to https://analytics.google.com/
+2. Create account (e.g., `byte886`) → create property (e.g., `ds-guides.wiki`)
+3. Business details: industry category, reporting time zone
+4. Data collection: choose **Web** → enter `https://www.ds-guides.wiki`
+5. Copy the **Measurement ID** (format: `G-XXXXXXXXXX`)
+6. Add the tracking code to `js/analytics.js` in the website repo (single file, all pages reference it)
+7. Push to GitHub → Vercel auto-deploys
+8. Verify: GA → Reports → Realtime → visit the site → should show 1 active user
+
+**Key settings**:
+- Enhanced measurement: enable/disable based on needs (page views is the default)
+- Data retention: set to 14 months (default is 2 months)
+- Account structure: one account per owner, one property per website
+
+**Reference**: https://support.google.com/analytics/answer/9304153
+
+### Step 8: Set Up Google Search Console (GSC)
+
+1. Go to https://search.google.com/search-console
+2. Click **Add property** → choose **Domain** (not URL prefix)
+3. Enter `ds-guides.wiki` → Continue
+4. GSC auto-detects Cloudflare as DNS provider → click **Start verification**
+5. Cloudflare authorization page opens → click **Authorize**
+   - This is a one-time authorization via Domain Connect protocol
+   - Google adds a TXT record to Cloudflare DNS automatically
+   - No ongoing permission is granted
+6. Verification completes instantly → click **Go to property**
+7. Submit sitemap:
+   - Left sidebar → Indexing → Sitemaps
+   - Enter `https://www.ds-guides.wiki/sitemap.xml` → Submit
+   - Status initially shows "Couldn't fetch" — this is normal, Google processes it within hours
+8. After a few days, check:
+   - Pages → indexing status
+   - Performance → search queries, impressions, clicks, position
+
+**Why Domain type over URL prefix?**
+- Covers all subdomains (www, m, blog) and both http/https
+- Cloudflare one-click verification is only available for Domain type
+- Future subdomains don't need re-verification
+
+**Reference**: https://support.google.com/webmasters/answer/9008080
+
 ---
 
 ## 4. Verification
@@ -160,10 +209,13 @@ curl -I https://ds-guides.wiki
 ```
 
 Then verify in browser:
-- https://ds-guides.wiki → should load the site
-- https://www.ds-guides.wiki → should load the site
+- https://ds-guides.wiki → should load the site (200 OK, primary domain)
+- https://www.ds-guides.wiki → should 308 redirect to https://ds-guides.wiki/
 - Check SSL certificate is valid
-- Check GA is receiving data (GA Realtime report)
+- Check GA is receiving data (GA → Reports → Realtime)
+- Check GSC verification is complete (GSC → Settings → Ownership verification)
+- Check sitemap submitted (GSC → Sitemaps → status should eventually show "Success")
+- SEO basics: title, meta description, canonical, H1/H2 hierarchy, viewport meta tag
 
 ---
 
@@ -227,7 +279,11 @@ If Vercel changes their A record IP:
 |----------|-----------|-------|
 | Spaceship | ds-guides.wiki, expires 2027-08-15 | Registrar only |
 | Cloudflare | Account ID: 62adf960343b448a7e52838e68808b21 | Free plan, DNS only |
+| Cloudflare | Zone ID: 96aa94883c28ef6b8c872d5c35f9841a | ds-guides.wiki zone |
 | Cloudflare nameservers | celeste.ns.cloudflare.com / thaddeus.ns.cloudflare.com | Assigned by Cloudflare |
 | Vercel | Team: dragonsword-guides (Hobby) | Auto-deploy from GitHub main |
 | GitHub | byte886/dragonsword-guides | Website code repo |
-| GA | Measurement ID: G-6XQCHB1YYV | In js/analytics.js |
+| GA | Account ID: 404676857, Property ID: 549932655 | Measurement ID: G-6XQCHB1YYV |
+| GA | Tracking code in `js/analytics.js` | Single file, all pages reference it |
+| GSC | Property: sc-domain:ds-guides.wiki | Verified via Cloudflare Domain Connect |
+| GSC | Sitemap: https://www.ds-guides.wiki/sitemap.xml | Submitted 2026-08-15 |
