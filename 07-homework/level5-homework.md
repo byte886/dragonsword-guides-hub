@@ -120,7 +120,7 @@ ds-guides.wiki（Spaceship 注册）
     ▼
 Cloudflare DNS（灰色云，DNS only）
     │ A 记录 @ → 216.198.79.1
-    │ CNAME www → cname.vercel-dns.com
+    │ CNAME www → df9ecd0750052516.vercel-dns-017.com
     ▼
 Vercel（Hobby 免费计划）
     │ 项目：dragonsword-guides

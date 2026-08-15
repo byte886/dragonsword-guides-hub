@@ -70,7 +70,7 @@ npx playwright cli -s=ga detach      # 用完断开
 - **Vercel**：托管网站（Hobby 免费计划），项目名 dragonsword-guides，push 到 main 自动部署
 - **Cloudflare**：DNS 管理（Free 计划），代理状态为 DNS only（灰色云），不开启 Proxied
 - **Spaceship**：域名注册商，nameserver 已指向 Cloudflare（celeste/thaddeus.ns.cloudflare.com）
-- DNS 记录：A 记录 @ → 216.198.79.1；CNAME www → cname.vercel-dns.com
+- DNS 记录：A 记录 @ → 216.198.79.1；CNAME www → df9ecd0750052516.vercel-dns-017.com
 - 域名：ds-guides.wiki（apex 为主域名直接服务；www 308 重定向到 ds-guides.wiki）
 - **GA**：Measurement ID G-6XQCHB1YYV，代码在 `js/analytics.js`
 - **GSC**：资源类型 sc-domain:ds-guides.wiki，通过 Cloudflare Domain Connect 验证，sitemap 已提交

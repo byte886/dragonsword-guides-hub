@@ -17,7 +17,7 @@ User types ds-guides.wiki
    Cloudflare nameservers (celeste/thaddeus.ns.cloudflare.com)
         │
         ├── A record:     @      → 216.198.79.1        (Vercel IP)
-        └── CNAME record: www    → cname.vercel-dns.com (Vercel CDN)
+        └── CNAME record: www    → df9ecd0750052516.vercel-dns-017.com (Vercel CDN)
         │
         ▼
    Vercel edge network → serves static files from GitHub repo
@@ -76,7 +76,7 @@ User types ds-guides.wiki
    - Click Edit on `www.ds-guides.wiki` → select "Redirect to Another Domain" → 308 Permanent Redirect → target `ds-guides.wiki` → Save
 5. Note the DNS records Vercel requires (click "View DNS configuration"):
    - **A record**: `@` → `216.198.79.1`
-   - **CNAME**: `www` → `cname.vercel-dns.com` (legacy but still works; Vercel may recommend a newer value like `df9ecd0750052516.vercel-dns-017.com`)
+   - **CNAME**: `www` → `df9ecd0750052516.vercel-dns-017.com` (Vercel recommended value; old `cname.vercel-dns.com` also works)
 
 **Domain redirect logic**: apex (`ds-guides.wiki`) serves the site directly; www 308-redirects to apex. All canonical URLs use `https://ds-guides.wiki/` (no www).
 
@@ -107,7 +107,7 @@ After the scan, review and edit records:
 3. **Add CNAME record**:
    - Type: CNAME
    - Name: `www`
-   - Target: `cname.vercel-dns.com`
+   - Target: `df9ecd0750052516.vercel-dns-017.com`
    - Proxy status: **DNS only** (gray cloud)
    - TTL: Auto
 4. Click **Continue to activation**
@@ -201,7 +201,7 @@ dig A ds-guides.wiki +short
 
 # Check CNAME
 dig CNAME www.ds-guides.wiki +short
-# Should return: cname.vercel-dns.com
+# Should return: df9ecd0750052516.vercel-dns-017.com
 
 # Check HTTPS
 curl -I https://ds-guides.wiki
@@ -224,7 +224,7 @@ Then verify in browser:
 ### Add a subdomain (e.g., blog.ds-guides.wiki)
 
 1. Cloudflare → DNS → Records → Add record
-2. Type: CNAME, Name: `blog`, Target: `cname.vercel-dns.com`, Proxy: DNS only
+2. Type: CNAME, Name: `blog`, Target: `df9ecd0750052516.vercel-dns-017.com`, Proxy: DNS only
 3. Vercel → Project Settings → Domains → add `blog.ds-guides.wiki`
 
 ### Change Vercel IP
