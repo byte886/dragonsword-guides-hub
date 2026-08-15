@@ -59,10 +59,18 @@ npx playwright cli -s=ga detach      # 用完断开
 ## 网站代码规范（Always）
 
 - 纯静态 HTML/CSS/JS，无构建步骤，无框架
-- 所有 HTML 文件必须包含 GA 跟踪代码（`</head>` 之前）
+- GA 跟踪代码统一在 `js/analytics.js` 维护，所有 HTML 通过 `<script defer src=".../js/analytics.js"></script>` 引用
 - canonical URL 统一为 `https://ds-guides.wiki/`
 - 多语言用子目录：`/en/`、`/zh/`、`/ko/`、`/ru/`、`/ja/`
 - 修改前先备份或确认 git 状态，避免覆盖用户工作
+
+## 部署架构（Always）
+
+- **Vercel**：托管网站（Hobby 免费计划），项目名 dragonsword-guides，push 到 main 自动部署
+- **Cloudflare**：DNS 管理（Free 计划），代理状态为 DNS only（灰色云），不开启 Proxied
+- **Spaceship**：域名注册商，nameserver 已指向 Cloudflare（celeste/thaddeus.ns.cloudflare.com）
+- DNS 记录：A 记录 @ → 216.198.79.1；CNAME www → cname.vercel-dns.com
+- 域名：ds-guides.wiki（Vercel 中 ds-guides.wiki 308 重定向到 www.ds-guides.wiki）
 
 ## Git 提交规范（Always）
 
