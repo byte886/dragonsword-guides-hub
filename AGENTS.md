@@ -14,6 +14,7 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 05-operation-guides/    操作手册（部署、GA/GSC、选词、素材等）
 06-project-continuity/  AI 上下文交接指南
 07-homework/            关卡作业复盘
+08-data-reviews/        数据复盘报告（GA/GSC/SimilarWeb）
 .agents/skills/         AI 技能文档（playwright-cli、playwright-extension、data-review）
 ```
 
