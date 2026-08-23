@@ -10,7 +10,7 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 
 ```
 01-project-tutorials/   关卡教程文本
-04-website/             网站代码（纯静态 HTML，5 语言，115 个文件）
+04-website/             网站代码（纯静态 HTML，5 语言，135 个文件）
 05-operation-guides/    操作手册（部署、GA/GSC、选词、素材等）
 06-project-continuity/  AI 上下文交接指南
 07-homework/            关卡作业复盘
@@ -74,6 +74,7 @@ npx playwright cli -s=ga detach      # 用完断开
 - 域名：ds-guides.wiki（apex 为主域名直接服务；www 308 重定向到 ds-guides.wiki）
 - **GA**：Measurement ID G-6XQCHB1YYV，代码在 `js/analytics.js`
 - **GSC**：资源类型 sc-domain:ds-guides.wiki，通过 Cloudflare Domain Connect 验证，sitemap 已提交
+- **内容补页节奏**：每 7-14 天查看 GSC 搜索词信号，对高 CTR/高展示但无落地页的词创建补页；下次复盘 2026-08-29
 
 ## Git 提交规范（Always）
 
