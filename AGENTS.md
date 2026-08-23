@@ -14,7 +14,7 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 05-operation-guides/    操作手册（部署、GA/GSC、选词、素材等）
 06-project-continuity/  AI 上下文交接指南
 07-homework/            关卡作业复盘
-.agents/skills/         AI 技能文档（playwright-cli、playwright-extension）
+.agents/skills/         AI 技能文档（playwright-cli、playwright-extension、data-review）
 ```
 
 ## 常用命令
@@ -30,6 +30,13 @@ git add -A && git commit -m "描述" && git push origin main
 PLAYWRIGHT_MCP_EXTENSION_TOKEN=<token> npx playwright cli -s=ga attach --extension=chrome
 npx playwright cli -s=ga <command>   # 后续操作复用会话
 npx playwright cli -s=ga detach      # 用完断开
+
+# 页面 SEO 验证（在 04-website/ 目录）
+python3 scripts/validate-pages.py           # 检查所有页面
+python3 scripts/validate-pages.py en/kalien # 检查指定页面
+
+# GitHub 推送（国内网络需走 ClashX 代理，SSH 已配置 443 端口代理）
+git push origin main
 ```
 
 ## 浏览器自动化（Always）
@@ -75,6 +82,7 @@ npx playwright cli -s=ga detach      # 用完断开
 - **GA**：Measurement ID G-6XQCHB1YYV，代码在 `js/analytics.js`
 - **GSC**：资源类型 sc-domain:ds-guides.wiki，通过 Cloudflare Domain Connect 验证，sitemap 已提交
 - **内容补页节奏**：每 7-14 天查看 GSC 搜索词信号，对高 CTR/高展示但无落地页的词创建补页；下次复盘 2026-08-29
+- **数据复盘节奏**：每周 GSC 快查，每两周 GA+GSC 完整复盘（读 `.agents/skills/data-review/SKILL.md`），每月加 SimilarWeb 竞品分析
 
 ## Git 提交规范（Always）
 
