@@ -43,7 +43,8 @@ Navigate to https://analytics.google.com/ and collect ALL of the following:
 
 **Important**:
 - Set date range to match the review period (last 7/14/30 days)
-- Take screenshots of each report, save to `08-data-reviews/`
+- Record all data directly in the report as tables — do not rely on screenshots
+- Screenshots are temporary and only taken when specifically requested (e.g., homework)
 - Note any anomalies (spikes, drops, unexpected countries)
 
 ### Step 2: GSC Reports (via Playwright)
@@ -136,71 +137,66 @@ For each metric, compare against thresholds and project history. **Do not just r
 
 ### Step 6: Produce Report
 
-Save report to `08-data-reviews/level{N}-data-review.md` using this structure:
+Save report to `08-data-reviews/YYYY-MM-DD-data-review.md` (use the review date). Report must be in Chinese. All data must be written as tables in the report itself — do not reference external screenshots.
 
 ```markdown
-# Level {N} Data Review: GA + GSC Analysis
+# 数据复盘报告：GA + GSC
 
-> Period: {start} - {end} ({days} days)
-> Date reviewed: {date}
-> Tools: GA (G-6XQCHB1YYV), GSC (sc-domain:ds-guides.wiki)
+> 复盘日期：{YYYY-MM-DD}
+> 数据周期：{start} 至 {end}（{days} 天）
+> 工具：Google Analytics（G-6XQCHB1YYV）、Google Search Console（sc-domain:ds-guides.wiki）
 
-## 1. Executive Summary
-{2-3 sentence overview with grade (A/B/C/D) and key finding}
+## 1. 总览
+{2-3 句概述，含评级（A/B/C/D）和核心发现}
 
-## 2. GA Metrics
-### 2.1 Traffic Acquisition
-{table + interpretation: is SEO working? any new channels?}
-### 2.2 Top Pages
-{table + interpretation: which content performs? which pages have issues?}
-### 2.3 Countries
-{table + interpretation: traffic quality by market, language alignment}
-### 2.4 Devices & Browsers
-{data + interpretation: optimization priority}
-### 2.5 Events
-{engagement rate, scroll rate, click rate + interpretation}
-### 2.6 Retention
-{new vs returning + interpretation}
+## 2. GA 数据分析
+### 2.1 流量来源
+{表格 + 解读：SEO 是否生效？有无新渠道？}
+### 2.2 热门页面
+{表格含浏览量、用户数、平均参与时间 + 解读：哪些内容表现好？哪些有问题？}
+### 2.3 国家/地区
+{表格含用户数、参与率、平均时长 + 解读：流量质量、语言市场匹配}
+### 2.4 设备与浏览器
+{数据 + 解读：优化优先级}
+### 2.5 事件与互动
+{参与率、滚动率、点击率 + 解读}
+### 2.6 留存
+{新用户 vs 回访用户 + 解读}
 
-## 3. GSC Metrics
-### 3.1 Performance Summary
-{clicks, impressions, CTR, position + trend vs previous period}
-### 3.2 Top Queries
-{high performers + high-impression low-CTR + content gaps}
-### 3.3 Top Pages
-{best performing pages + pages needing optimization}
-### 3.4 Indexing Status
-{indexed count, not indexed breakdown, action needed}
+## 3. GSC 数据分析
+### 3.1 搜索效果总览
+{点击、展示、CTR、排名 + 与上期对比趋势}
+### 3.2 热门搜索词
+{高表现词 + 高展示低 CTR 词 + 内容缺口词}
+### 3.3 索引状态
+{已收录数、未收录原因分类、需要采取的行动}
 
-## 4. Reports Not Checked (and why)
-{List any GA/GSC reports skipped and the reason — e.g., "Conversions: no key events configured yet"}
+## 4. 未查看的报告（及原因）
+{列出跳过的 GA/GSC 报告及原因}
 
-## 5. Problems Identified
-### P0 Critical (immediate action)
-### P1 Important (this sprint)
-### P2 Monitor (watch trend)
+## 5. 问题清单
+### P0 — 紧急
+### P1 — 重要
+### P2 — 观察
 
-## 6. Action Plan
-### This Week
-- [ ] {specific, measurable actions}
-### Next 2 Weeks
-- [ ] {specific actions}
-### Next 30 Days
-- [ ] {specific actions}
+## 6. 行动计划
+### 本周
+- [ ] {具体、可衡量的行动}
+### 两周内
+- [ ] {具体行动}
+### 30 天内
+- [ ] {具体行动}
 
-## 7. Next Review Date
-{date}
-
-## 8. Screenshots
-{list of screenshot files}
+## 7. 下次复盘
+{日期}
 ```
 
 ### Step 7: Update Project Documents
 
 After each review:
 1. Update `06-project-continuity/01-项目背景与决策日志.md` with key decisions
-2. Update AGENTS.md if review cadence or thresholds change
-3. Commit screenshots to `08-data-reviews/`
+2. Update `08-data-reviews/README.md` review history table
+3. Update AGENTS.md if review cadence or thresholds change
 4. If new content gaps found, create follow-up tasks
 5. Commit and push both repos (website + hub)
 
@@ -269,6 +265,6 @@ Use these as baseline for future comparisons:
 - Don't compare GA and GSC numbers directly (different measurement methods)
 - SimilarWeb estimates are directional, not exact
 - Always check date ranges are consistent across reports
-- Screenshots should capture the full report table, not just charts
+- Record data as tables in the report, not screenshots
 - GA device category dimension may be hard to switch in UI; GSC device data is an acceptable substitute
 - When GA navigation is difficult, use JavaScript evaluation to click buttons: `document.querySelectorAll('button')` and match by textContent

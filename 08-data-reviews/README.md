@@ -1,28 +1,29 @@
-# Data Reviews
+# 数据复盘报告
 
-Periodic GA + GSC + SimilarWeb data reviews for ds-guides.wiki.
+ds-guides.wiki 的定期 GA + GSC + SimilarWeb 数据复盘。
 
-## File Naming Convention
+## 命名规范
 
-- Reports: `level{N}-data-review.md` (e.g., `level6-data-review.md`)
-- Screenshots: `{tool}-{report}-level{N}.png` (e.g., `ga-traffic-level6.png`, `gsc-performance-level6.png`)
+- 报告文件：`YYYY-MM-DD-data-review.md`（按复盘日期命名）
+- 报告语言：中文
+- 报告必须包含完整数据表格和解读，不依赖外部截图
 
-## Review Cadence
+## 复盘节奏
 
-| Frequency | Scope |
-|-----------|-------|
-| Every 7 days | GSC quick check (performance + indexing) |
-| Every 14 days | Full GA + GSC review |
-| Every 30 days | GA + GSC + SimilarWeb competitor analysis |
+| 频率 | 范围 |
+|------|------|
+| 每 7 天 | GSC 快查（搜索效果 + 索引状态） |
+| 每 14 天 | GA + GSC 完整复盘 |
+| 每 30 天 | GA + GSC + SimilarWeb 竞品分析 |
 
-## How to Generate a Review
+## 如何生成复盘
 
-AI assistants: read `.agents/skills/data-review/SKILL.md` for the complete review checklist, interpretation logic, and report template.
+AI 助手：阅读 `.agents/skills/data-review/SKILL.md`，按清单收集数据、按模板生成报告到本目录。
 
-Humans: read `05-operation-guides/08-ga-gsc-practice-handbook.md` for the practical handbook explaining which reports to check and why.
+人工参考：阅读 `05-operation-guides/08-ga-gsc-practice-handbook.md`。
 
-## Review History
+## 复盘历史
 
-| Date | Level | Period | Key Finding |
-|------|-------|--------|-------------|
-| 2026-08-23 | 6 | Aug 15-22 (8 days) | 305 users, 50% organic, 49% bounce rate; Korean users highest engagement |
+| 日期 | 数据周期 | 核心发现 |
+|------|---------|---------|
+| 2026-08-23 | 8/15-8/22（8 天） | 305 用户，自然搜索 50%，49% 跳出率；韩国用户参与度最高 |
