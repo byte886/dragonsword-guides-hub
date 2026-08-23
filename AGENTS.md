@@ -15,7 +15,7 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 06-project-continuity/  AI 上下文交接指南
 07-homework/            关卡作业复盘
 08-data-reviews/        数据复盘报告（GA/GSC/SimilarWeb）
-.agents/skills/         AI 技能文档（playwright-cli、playwright-extension、data-review）
+.agents/skills/         AI 技能文档（playwright-cli、playwright-extension、data-review、network-setup）
 ```
 
 ## 常用命令
@@ -38,6 +38,9 @@ python3 scripts/validate-pages.py en/kalien # 检查指定页面
 
 # GitHub 推送（国内网络需走 ClashX 代理，SSH 已配置 443 端口代理）
 git push origin main
+
+# 飞书 API 遇 DNS 超时时设置代理（详见 .agents/skills/network-setup/SKILL.md）
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890
 ```
 
 ## 浏览器自动化（Always）
