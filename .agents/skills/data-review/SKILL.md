@@ -1,143 +1,143 @@
 ---
 name: data-review
-description: "Periodic website data review using GA, GSC, and SimilarWeb. Use when the user asks for a data review, traffic analysis, performance check, SEO review, or periodic (weekly/monthly) analytics report. Produces an evaluation report with action items."
+description: "定期网站数据复盘，使用 GA、GSC 和 SimilarWeb。当用户要求数据复盘、流量分析、表现检查、SEO 审查或定期（周/月）分析报告时使用。产出含行动项的评估报告。"
 ---
 
-# Website Data Review Skill
+# 网站数据复盘技能
 
-Systematic data review for ds-guides.wiki. Combines GA (on-site behavior), GSC (search performance), and SimilarWeb (competitive intelligence) into an actionable report.
+对 ds-guides.wiki 进行系统化数据复盘。整合 GA（站内行为）、GSC（搜索表现）和 SimilarWeb（竞品情报），产出可执行的报告。
 
-**Detailed interpretation guide**: `05-operation-guides/08-ga-gsc-practice-handbook.md`
+**详细解读指南**：`05-operation-guides/08-ga-gsc-practice-handbook.md`
 
-## When to Use
+## 何时使用
 
-- Weekly GSC quick check (every 7 days)
-- Bi-weekly full GA+GSC review (every 14 days)
-- Monthly comprehensive review with SimilarWeb
-- After major content updates or deployments
-- When user asks "how is the site doing" or "check analytics"
+- 每周 GSC 快查（每 7 天）
+- 每两周完整 GA+GSC 复盘（每 14 天）
+- 每月综合复盘（含 SimilarWeb）
+- 重大内容更新或部署后
+- 用户问"网站表现如何"或"检查分析数据"时
 
-## Prerequisites
+## 前置条件
 
-1. Read `05-operation-guides/07-ga-gsc-guide.md` for report navigation
-2. Read `05-operation-guides/08-ga-gsc-practice-handbook.md` for interpretation logic
-3. Connect to user Chrome via Playwright (read `.agents/skills/playwright-extension/SKILL.md`)
-4. Confirm GA property: ds-guides.wiki (G-6XQCHB1YYV)
-5. Confirm GSC property: sc-domain:ds-guides.wiki
+1. 阅读 `05-operation-guides/07-ga-gsc-guide.md` 了解报告导航
+2. 阅读 `05-operation-guides/08-ga-gsc-practice-handbook.md` 了解解读逻辑
+3. 通过 Playwright 连接用户 Chrome（阅读 `.agents/skills/playwright-extension/SKILL.md`）
+4. 确认 GA 媒体资源：ds-guides.wiki（G-6XQCHB1YYV）
+5. 确认 GSC 资源：sc-domain:ds-guides.wiki
 
-## Review Checklist
+## 复盘清单
 
-### Step 1: GA Reports (via Playwright)
+### 第 1 步：GA 报告（通过 Playwright）
 
-Navigate to https://analytics.google.com/ and collect ALL of the following:
+访问 https://analytics.google.com/ ，收集以下全部数据：
 
-| Report | Path | What to collect | Why it matters |
-|--------|------|-----------------|----------------|
-| **Realtime** | Reports > Realtime | Active users, top pages, countries | Confirm tracking works; spot traffic spikes |
-| **Traffic Acquisition** | Reports > Acquisition > Traffic acquisition | Channel breakdown (Organic/Direct/Referral/Social), users, engagement rate per channel | Is SEO working? Are backlinks/social driving traffic? |
-| **Pages & Screens** | Reports > Engagement > Pages and screens | Top 10 pages: views, users, avg engagement time, views per user | Which content is popular? Is content quality good (time on page)? |
-| **Countries** | Reports > User > Demographics > Country/Region | Top 10 countries: users, engagement rate, avg time | Does traffic match 5 target languages? Which markets are high-quality? |
-| **Tech Details** | Reports > Tech > Tech details | Browsers; switch dimension to Device category for desktop/mobile | Browser compatibility; mobile vs desktop optimization priority |
-| **Events** | Reports > Engagement > Events | page_view, user_engagement, scroll, click counts and user % | Engagement depth: bounce rate, scroll rate, navigation usage |
-| **Retention** | Reports > Retention | New vs returning users, cohort curve | Do users come back? Content stickiness |
+| 报告 | 路径 | 收集内容 | 重要性 |
+|------|------|----------|--------|
+| **实时** | 报告 > 实时 | 活跃用户、热门页面、国家 | 确认跟踪正常；发现流量突增 |
+| **流量获取** | 报告 > 获客 > 流量获取 | 渠道细分（自然搜索/直接/引荐/社交）、各渠道用户数、参与率 | SEO 是否生效？外链/社交是否带来流量？ |
+| **页面和屏幕** | 报告 > 互动 > 页面和屏幕 | Top 10 页面：浏览量、用户数、平均参与时间、每用户浏览量 | 哪些内容受欢迎？内容质量如何（停留时间）？ |
+| **国家/地区** | 报告 > 用户 > 受众特征 > 国家/地区 | Top 10 国家：用户数、参与率、平均时长 | 流量是否匹配 5 种目标语言？哪些市场质量高？ |
+| **技术详情** | 报告 > 技术 > 技术详情 | 浏览器；切换维度到设备类别查看桌面/移动 | 浏览器兼容性；移动 vs 桌面优化优先级 |
+| **事件** | 报告 > 互动 > 事件 | page_view、user_engagement、scroll、click 的次数和用户占比 | 互动深度：跳出率、滚动率、导航使用 |
+| **留存** | 报告 > 留存 | 新用户 vs 回访用户、队列曲线 | 用户会回来吗？内容粘性 |
 
-**Important**:
-- Set date range to match the review period (last 7/14/30 days)
-- Record all data directly in the report as tables — do not rely on screenshots
-- Screenshots are temporary and only taken when specifically requested (e.g., homework)
-- Note any anomalies (spikes, drops, unexpected countries)
+**注意**：
+- 日期范围设置为复盘周期（最近 7/14/30 天）
+- 所有数据以表格形式直接写入报告，不依赖截图
+- 截图仅在特定需求（如作业）时临时拍摄
+- 记录任何异常（突增、骤降、意外国家）
 
-### Step 2: GSC Reports (via Playwright)
+### 第 2 步：GSC 报告（通过 Playwright）
 
-Navigate to https://search.google.com/search-console/ and collect:
+访问 https://search.google.com/search-console/ ，收集：
 
-| Report | Path | What to collect | Why it matters |
-|--------|------|-----------------|----------------|
-| **Performance** | Performance > Search results | Clicks, impressions, CTR, avg position across 4 dimensions | Is SEO working? Which queries/pages drive traffic? |
-| **Pages (Indexing)** | Indexing > Pages | Indexed vs not indexed count, top issue reasons | Are pages being found by Google? Technical SEO issues? |
-| **Sitemaps** | Indexing > Sitemaps | Status, last read, discovered URL count | Is Google reading our sitemap? |
-| **URL Inspection** | Top search bar | Spot-check 2-3 important pages | Are new pages indexed? Request indexing if not |
+| 报告 | 路径 | 收集内容 | 重要性 |
+|------|------|----------|--------|
+| **效果** | 效果 > 搜索效果 | 点击、展示、CTR、平均排名（4 个维度） | SEO 是否生效？哪些查询/页面带来流量？ |
+| **页面（索引）** | 索引 > 页面 | 已收录 vs 未收录数量、主要问题原因 | Google 是否发现页面？技术 SEO 问题？ |
+| **站点地图** | 索引 > 站点地图 | 状态、上次读取、发现的 URL 数 | Google 是否在读取 sitemap？ |
+| **网址检查** | 顶部搜索栏 | 抽查 2-3 个重要页面 | 新页面是否收录？未收录则请求索引 |
 
-**For Performance report, collect all 4 dimensions:**
-1. **Queries**: Top 10 by clicks (what works), top 10 by impressions (high-impression low-CTR = optimize titles), queries with no landing page (content gaps)
-2. **Pages**: Top 10 by clicks; high-impression low-click pages need title/description optimization
-3. **Countries**: Top 5; compare with GA country data to assess traffic quality
-4. **Devices**: Desktop/mobile/tablet split; if mobile ranks worse, check mobile experience
+**效果报告需收集全部 4 个维度：**
+1. **查询**：按点击 Top 10（有效词）、按展示 Top 10（高展示低 CTR = 优化标题）、无落地页的查询（内容缺口）
+2. **页面**：按点击 Top 10；高展示低点击页面需优化标题/描述
+3. **国家**：Top 5；与 GA 国家数据对比评估流量质量
+4. **设备**：桌面/移动/平板分布；如果移动排名差，检查移动体验
 
-### Step 3: SimilarWeb (monthly only, after day 30)
+### 第 3 步：SimilarWeb（仅月度，上线 30 天后）
 
-Navigate to https://www.similarweb.com/ (login required, user has PRO):
+访问 https://www.similarweb.com/ （需登录，用户有 PRO）：
 
-1. **Our site** (ds-guides.wiki): May show "No data" if <10K monthly visits — skip if so
-2. **Competitors**: Check 2-3 competitor guide sites (games.gg, destructoid.com, thegameswiki.com):
-   - Monthly visits trend (benchmark against our traffic)
-   - Traffic sources (organic vs referral vs social percentages)
-   - Top referral sites (backlink opportunities)
-   - Top organic keywords (keyword gap analysis)
-   - Audience interests (content direction)
+1. **本站**（ds-guides.wiki）：如月访问 <1 万可能显示"无数据"，则跳过
+2. **竞品**：检查 2-3 个竞品攻略站（games.gg、destructoid.com、thegameswiki.com）：
+   - 月访问趋势（与我们流量对比）
+   - 流量来源（自然搜索 vs 引荐 vs 社交占比）
+   - 热门引荐网站（外链机会）
+   - 热门自然关键词（关键词差距分析）
+   - 受众兴趣（内容方向）
 
-### Step 4: Cross-Reference & Analysis
+### 第 4 步：交叉对比与分析
 
-Compare data sources to find insights:
+对比多数据源发现洞察：
 
-| Question | GA | GSC | SimilarWeb |
-|----------|----|----|------------|
-| Which pages get traffic? | Top pages by views | Top pages by clicks | — |
-| Where does traffic come from? | Channels | Queries | Referral sites |
-| Which countries? | Country report | Country dimension | Geo distribution |
-| Mobile vs desktop? | Tech report | Device dimension | — |
-| Do users engage? | Events, retention, time on page | CTR (search appeal) | Bounce rate, pages/visit |
-| Competitor benchmarks | — | — | Traffic, keywords, referrals |
+| 问题 | GA | GSC | SimilarWeb |
+|------|----|----|------------|
+| 哪些页面获得流量？ | 按浏览量的热门页面 | 按点击的热门页面 | — |
+| 流量从哪来？ | 渠道 | 查询词 | 引荐网站 |
+| 哪些国家？ | 国家报告 | 国家维度 | 地理分布 |
+| 移动 vs 桌面？ | 技术报告 | 设备维度 | — |
+| 用户是否互动？ | 事件、留存、停留时间 | CTR（搜索吸引力） | 跳出率、每次访问页数 |
+| 竞品基准 | — | — | 流量、关键词、引荐 |
 
-### Step 5: Interpretation — Apply Action Logic
+### 第 5 步：解读 — 应用行动逻辑
 
-For each metric, compare against thresholds and project history. **Do not just report numbers — interpret them.**
+对每个指标，与阈值和项目历史对比。**不要只报数字 — 要解读。**
 
-#### Traffic Acquisition
-- Organic share rising → SEO working, continue
-- Organic share <20% → critical, SEO not effective
-- Referral = 0 after 30 days → start backlink building (Reddit, Discord, forums)
-- Direct >70% with low engagement → possible tracking issue or bot traffic
+#### 流量获取
+- 自然搜索占比上升 → SEO 生效，继续
+- 自然搜索占比 <20% → 危险，SEO 未生效
+- 30 天后引荐流量 = 0 → 开始外链建设（Reddit、Discord、论坛）
+- 直接流量 >70% 且参与度低 → 可能是跟踪问题或机器人流量
 
-#### Pages & Screens
-- Guide page avg time >1 min → good content quality
-- Guide page avg time <10 sec → content doesn't match search intent; check title vs content
-- Homepage avg time <15 sec → improve above-the-fold, add "Popular Guides" section
-- New page has 0 views after 7 days → check indexing and internal links
-- High views but low scroll → content below fold not reached, improve intro/navigation
+#### 页面和屏幕
+- 攻略页平均停留 >1 分钟 → 内容质量好
+- 攻略页平均停留 <10 秒 → 内容与搜索意图不匹配；检查标题与内容
+- 首页平均停留 <15 秒 → 优化首屏，增加"热门攻略"板块
+- 新页面 7 天后 0 浏览 → 检查索引和内部链接
+- 高浏览但低滚动 → 首屏以下内容未被看到，优化导语/导航
 
-#### Countries
-- US traffic >30% but engagement <15% → likely bot traffic; check GA bot filtering
-- Korea/Japan/Russia high engagement → prioritize translating/supplementing those languages
-- A language's target country has 0 traffic → check if that language version is indexed
+#### 国家/地区
+- 美国流量 >30% 但参与率 <15% → 疑似机器人流量；检查 GA 机器人过滤
+- 韩国/日本/俄罗斯高参与率 → 优先翻译/补充这些语言
+- 某语言目标国家 0 流量 → 检查该语言版本是否被收录
 
-#### Events
-- Engagement rate <25% → critical, half of users bounce immediately
-- Scroll rate <20% → users don't see content below fold; improve first screen
-- Click count abnormally low → check if GA enhanced measurement is enabled; check navigation usability
+#### 事件
+- 参与率 <25% → 危险，半数用户立即跳出
+- 滚动率 <20% → 用户看不到首屏以下内容；优化首屏
+- 点击数异常低 → 检查 GA 增强型衡量是否开启；检查导航可用性
 
-#### Retention
-- Return rate >15% → healthy for a guide site
-- Return rate <8% after 30 days → add "recent updates" section, consider newsletter
-- New sites: low return rate is normal in first 30 days, track trend not absolute
+#### 留存
+- 回访率 >15% → 攻略站健康水平
+- 30 天后回访率 <8% → 增加"最近更新"板块，考虑邮件订阅
+- 新站：前 30 天回访率低是正常的，跟踪趋势而非绝对值
 
-#### GSC Performance
-- CTR >5% → titles/descriptions are effective
-- CTR <3% with high impressions → optimize title and meta description
-- Position 5-10 with impressions → on the cusp of page 1; optimize content to break through
-- Position >10 → needs more content depth or backlinks
-- High-impression queries with no landing page → create new content (content gap)
+#### GSC 搜索效果
+- CTR >5% → 标题/描述有效
+- CTR <3% 且展示量高 → 优化标题和 meta description
+- 排名 5-10 且有展示 → 即将进入首页；优化内容争取突破
+- 排名 >10 → 需要更多内容深度或外链
+- 高展示查询无落地页 → 创建新内容（内容缺口）
 
-#### GSC Indexing
-- Indexed >90% → healthy
-- "Discovered - not indexed" → normal for new sites, wait; if persists >30 days, improve internal linking
-- "Crawled - not indexed" → content quality may be too thin or duplicate
-- 404 errors → fix links or add redirects
-- New pages not indexed after 14 days → request indexing via URL Inspection
+#### GSC 索引
+- 已收录 >90% → 健康
+- "已发现 - 未编入索引" → 新站正常，等待；超过 30 天则改善内链
+- "已抓取 - 未编入索引" → 内容可能太薄或重复
+- 404 错误 → 修复链接或添加重定向
+- 新页面 14 天后未收录 → 通过网址检查请求索引
 
-### Step 6: Produce Report
+### 第 6 步：生成报告
 
-Save report to `08-data-reviews/YYYY-MM-DD-data-review.md` (use the review date). Report must be in Chinese. All data must be written as tables in the report itself — do not reference external screenshots.
+报告保存到 `08-data-reviews/YYYY-MM-DD-data-review.md`（使用复盘日期）。报告必须用中文。所有数据以表格形式写入报告本身，不引用外部截图。
 
 ```markdown
 # 数据复盘报告：GA + GSC
@@ -191,80 +191,80 @@ Save report to `08-data-reviews/YYYY-MM-DD-data-review.md` (use the review date)
 {日期}
 ```
 
-### Step 7: Update Project Documents
+### 第 7 步：更新项目文档
 
-After each review:
-1. Update `06-project-continuity/01-项目背景与决策日志.md` with key decisions
-2. Update `08-data-reviews/README.md` review history table
-3. Update AGENTS.md if review cadence or thresholds change
-4. If new content gaps found, create follow-up tasks
-5. Commit and push both repos (website + hub)
+每次复盘后：
+1. 更新 `06-project-continuity/01-项目背景与决策日志.md` 记录关键决策
+2. 更新 `08-data-reviews/README.md` 复盘历史表
+3. 如复盘节奏或阈值变化，更新 AGENTS.md
+4. 如发现新内容缺口，创建后续任务
+5. 提交并推送两个仓库（website + hub）
 
-## Review Cadence
+## 复盘节奏
 
-| Frequency | Scope | Tools | Duration |
-|-----------|-------|-------|----------|
-| Every 7 days | GSC: performance + indexing | GSC only | 10 min |
-| Every 14 days | Full GA + GSC review | GA + GSC | 30 min |
-| Every 30 days | Comprehensive + competitors | GA + GSC + SimilarWeb | 60 min |
+| 频率 | 范围 | 工具 | 耗时 |
+|------|------|------|------|
+| 每 7 天 | GSC：效果 + 索引 | 仅 GSC | 10 分钟 |
+| 每 14 天 | 完整 GA + GSC 复盘 | GA + GSC | 30 分钟 |
+| 每 30 天 | 综合 + 竞品 | GA + GSC + SimilarWeb | 60 分钟 |
 
-## Key Thresholds (for ds-guides.wiki)
+## 关键阈值（ds-guides.wiki）
 
-| Metric | Healthy | Warning | Critical |
-|--------|---------|---------|----------|
-| Engagement rate | >40% | 25-40% | <25% |
-| Scroll rate | >40% | 20-40% | <20% |
-| CTR (GSC) | >5% | 3-5% | <3% |
-| Avg position | <5 | 5-10 | >10 |
-| Return rate (30d) | >15% | 8-15% | <8% |
-| Indexed pages | >90% | 70-90% | <70% |
-| Organic traffic trend | Growing | Flat | Declining |
-| Referral traffic | >10% | 1-10% | 0% after 30 days |
-| Guide page avg time | >1 min | 30-60 sec | <10 sec |
+| 指标 | 健康 | 警告 | 危险 |
+|------|------|------|------|
+| 参与率 | >40% | 25-40% | <25% |
+| 滚动率 | >40% | 20-40% | <20% |
+| CTR（GSC） | >5% | 3-5% | <3% |
+| 平均排名 | <5 | 5-10 | >10 |
+| 回访率（30 天） | >15% | 8-15% | <8% |
+| 已收录页面 | >90% | 70-90% | <70% |
+| 自然搜索流量趋势 | 增长 | 持平 | 下降 |
+| 引荐流量 | >10% | 1-10% | 30 天后仍为 0% |
+| 攻略页平均停留 | >1 分钟 | 30-60 秒 | <10 秒 |
 
-## Project Benchmarks (first 8 days, Aug 15-22 2026)
+## 项目基准（前 8 天，2026-08-15 至 22）
 
-Use these as baseline for future comparisons:
+作为未来对比的基线：
 
-| Metric | Value |
-|--------|-------|
-| Total users | 305 |
-| Organic search share | 50% |
-| Top country | US (38%, but low engagement — likely bots) |
-| Highest engagement | South Korea (66% engagement, 1m50s avg) |
-| Engagement rate | 51% |
-| Scroll rate | 21% |
-| Return rate | 8.9% |
-| GSC clicks | 135 |
-| GSC impressions | 2,870 |
+| 指标 | 值 |
+|------|----|
+| 总用户数 | 305 |
+| 自然搜索占比 | 50% |
+| 最大流量国 | 美国（38%，但参与率低 — 疑似机器人） |
+| 最高参与度 | 韩国（66% 参与率，平均 1 分 50 秒） |
+| 参与率 | 51% |
+| 滚动率 | 21% |
+| 回访率 | 8.9% |
+| GSC 点击 | 135 |
+| GSC 展示 | 2,870 |
 | GSC CTR | 4.7% |
-| GSC avg position | 7.8 |
-| Indexed pages | 89 of 135 |
+| GSC 平均排名 | 7.8 |
+| 已收录页面 | 89 / 135 |
 
-## Reports Not Routinely Checked (and when to check them)
+## 不常规检查的报告（及何时检查）
 
-| Report | Tool | Skip reason | Check when |
-|--------|------|-------------|------------|
-| User Acquisition | GA | Nearly identical to Traffic Acquisition for new sites | Running paid ads or UTM campaigns |
-| Conversions | GA | No key events configured | After setting up conversion events |
-| Advertising | GA | No ads running | After AdSense/Adsterra integration |
-| Explorations | GA | Custom analysis not needed for routine review | Funnel/path/cohort analysis needed |
-| Landing Pages | GA | Covered by Pages report | Page count >50 or running campaign landing pages |
-| Ecommerce/Monetization | GA | Content site, no products | Never (unless selling products) |
-| User Lifetime Value | GA | Needs long-term data | After 90 days |
-| Core Web Vitals | GSC | Insufficient data for new site | After 30 days, monthly |
-| Mobile Usability | GSC | Responsive CSS already implemented | Mobile traffic anomalies |
-| Links report | GSC | Minimal backlinks; internal links tracked in content map | After starting backlink building |
-| Security/Manual Actions | GSC | Should be empty; quick weekly scan | If traffic suddenly drops |
-| International Targeting | GSC | hreflang validated via code | Multi-language ranking issues |
+| 报告 | 工具 | 跳过原因 | 何时检查 |
+|------|------|----------|----------|
+| 用户获取 | GA | 新站与流量获取几乎相同 | 投放付费广告或 UTM 活动时 |
+| 转化 | GA | 未配置关键事件 | 设置转化事件后 |
+| 广告 | GA | 未投放广告 | 接入 AdSense/Adsterra 后 |
+| 探索 | GA | 常规复盘不需要自定义分析 | 需要漏斗/路径/队列分析时 |
+| 着陆页 | GA | 页面报告已覆盖 | 页面数 >50 或投放活动着陆页时 |
+| 电子商务/变现 | GA | 内容站无商品 | 永不（除非卖产品） |
+| 用户生命周期价值 | GA | 需要长期数据 | 90 天后 |
+| 核心网页指标 | GSC | 新站数据不足 | 30 天后，每月 |
+| 移动设备易用性 | GSC | 已实现响应式 CSS | 移动流量异常时 |
+| 链接报告 | GSC | 外链极少；内链在内容关联图中跟踪 | 开始外链建设后 |
+| 安全/手动操作 | GSC | 应为空；每周快速扫描 | 流量突然下降时 |
+| 国际定位 | GSC | hreflang 已通过代码验证 | 多语言排名异常时 |
 
-## Common Pitfalls
+## 常见陷阱
 
-- GA data has 24-48 hour delay; GSC has 2-3 day delay
-- New sites show inflated US/bot traffic in first weeks — compare engagement rate, not just user count
-- Don't compare GA and GSC numbers directly (different measurement methods)
-- SimilarWeb estimates are directional, not exact
-- Always check date ranges are consistent across reports
-- Record data as tables in the report, not screenshots
-- GA device category dimension may be hard to switch in UI; GSC device data is an acceptable substitute
-- When GA navigation is difficult, use JavaScript evaluation to click buttons: `document.querySelectorAll('button')` and match by textContent
+- GA 数据有 24-48 小时延迟；GSC 有 2-3 天延迟
+- 新站前几周美国/机器人流量偏高 — 对比参与率，不要只看用户数
+- 不要直接对比 GA 和 GSC 数字（测量方法不同）
+- SimilarWeb 估算为方向性参考，非精确值
+- 始终检查各报告日期范围一致
+- 数据以表格写入报告，不依赖截图
+- GA 设备类别维度在 UI 中可能难以切换；GSC 设备数据可作为替代
+- GA 导航困难时，用 JavaScript 执行点击按钮：`document.querySelectorAll('button')` 按 textContent 匹配

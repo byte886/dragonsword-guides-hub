@@ -175,15 +175,27 @@ Our data clearly supports "continue": 135 clicks, position 7.8, multi-language t
 
 | Action | Priority | Status |
 |--------|----------|--------|
-| Create Kalien character guide (5 languages) | High | Planned |
-| Create Tower of Trials guide (5 languages) | High | Planned |
-| Create Ornette & Sion character pages (5 languages) | Medium | Planned |
+| Create Kalien character guide (5 languages) | High | Completed (20 pages: kalien, tower-of-trials, ornette, sion) |
+| Create Tower of Trials guide (5 languages) | High | Completed |
+| Create Ornette & Sion character pages (5 languages) | Medium | Completed |
 | Monitor roadmap page ranking position | Medium | Next review (day 14) |
 | Revisit Adsterra after traffic grows | Low | When daily visits > 100 |
 | Day 14 GSC review | Scheduled | 2026-08-29 |
 
 ---
 
-## 7. Screenshot
+## 8. GA Data Supplement (added 2026-08-23)
 
-GSC performance report saved as `gsc-performance-level6.png`.
+After the initial GSC review, GA data was collected for the same period (Aug 15-22):
+
+- 305 total users, 50.2% organic search, 49.8% direct
+- Engagement rate 51.3%, scroll rate 20.9%, only 6 click events
+- Top quality traffic: South Korea (66% engagement, 1m50s avg), Russia (33%, 1m16s), Japan (49%, 1m31s)
+- US traffic: 38% of users but only 13% engagement (suspected bot traffic)
+- Homepage: 101 views but only 11s avg engagement — above-the-fold needs optimization
+- Return rate: 8.9% (27 returning users)
+
+Actions taken based on GA findings:
+1. Homepage optimization: add "Popular Guides" section above the fold
+2. GA enhanced measurement to be verified (click tracking)
+3. New pages submitted for GSC indexing
