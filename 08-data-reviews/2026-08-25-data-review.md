@@ -287,7 +287,7 @@
 
 ### P2 — 观察
 
-7. **零引荐/社交流量**：内容补全后再开始外链建设
+7. **零引荐/社交流量**：游戏新站不急于外链（外链起效慢，热度窗口短）；确认长期价值后再启动，参考 `05-operation-guides/10-post-launch-seo-playbook.md`
 8. **ja/ru/zh 新页面正文仍为英文**：元数据已翻译，正文待补充
 9. **roadmap.html CTR 3.0%**：排名 10.8 偏后，标题可后续优化
 10. **4 个页面缺素材文件**：kalien/ornette/sion/tower-of-trials 需补素材
@@ -319,25 +319,27 @@
 - [ ] 补充 kalien/ornette/sion/tower-of-trials 的素材文件
 - [ ] 观察 3 个已优化页面的 CTR 变化（GSC 数据延迟 2-3 天）
 - [ ] 检查 25 个未索引页面的最新状态（8/27 后）
+- [ ] 用 Google Trends 确认游戏热度趋势，监控飙升词
 
 ### 两周内（9/1-9/14）
 
 - [ ] 创建剩余缺失角色页：Aria、Dana、Tarte、Cerese、Othello、Alex、Johnny、Astria
-- [ ] Lute 页增加详细 Karma 推荐章节
-- [ ] Best Team 页按角色索引配队
+- [ ] Lute 页增加详细 Karma 推荐章节（新增内容，不大改已有内容）
+- [ ] Best Team 页按角色索引配队（新增章节）
 - [ ] Characters 页补全 19 角色信息
 - [ ] 从高流量页面（classes、gear、build）添加指向新页面的内链
 - [ ] 补充 ja/ru/zh 新页面正文翻译（优先日文、俄文）
 - [ ] 确认 Kalsion 是否为 Kalien 异译，统一命名
+- [ ] 监控 Reddit/Discord/Steam 社区热门讨论，挖长尾词
 
 ### 30 天内（至 9/22）
 
 - [ ] 第二次完整 GA+GSC 复盘（9/8）
 - [ ] 用 SimilarWeb PRO 分析竞品流量和关键词差距
-- [ ] 内容补全后开始外链建设（Reddit、Steam 社区、Discord）
 - [ ] 评估日访问是否达到 500+（Adsterra 门槛）
 - [ ] 考虑 DLC/时效性内容（Abyssal Direwolf 8/31 截止后可做总结）
-- [ ] 从游戏 wiki/攻略站建立 3-5 个反链
+- [ ] 对数据好的页面新增多媒体内容（图片、图表）提升停留时长
+- [ ] **外链暂不执行**：游戏新站热度窗口短，外链起效慢；确认网站有长期稳定流量后再启动（参考 `05-operation-guides/10-post-launch-seo-playbook.md`）
 
 ---
 
