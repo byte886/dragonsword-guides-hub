@@ -9,13 +9,16 @@ AI 出海游戏热词站（DragonSword: Awakening），纯静态 HTML 多语言�
 ## 项目结构
 
 ```
-01-project-tutorials/   关卡教程文本
-04-website/             网站代码（纯静态 HTML，5 语言，135 个文件）
-05-operation-guides/    操作手册（部署、GA/GSC、选词、素材等）
-06-project-continuity/  AI 上下文交接指南
-07-homework/            关卡作业复盘
-08-data-reviews/        数据复盘报告（GA/GSC/SimilarWeb）
-.agents/skills/         AI 技能文档（playwright-cli、playwright-extension、data-review、network-setup）
+01-project-tutorials/   关卡教程原文（level0-6）
+02-research-data/       调研产出（关键词、竞品分析）
+03-content-materials/   素材库（27个页面素材 + 汇总表）
+04-website/             网站代码（Git子模块，纯静态HTML，5语言）
+05-operation-guides/    操作手册（14个文档，含工作流总览）
+06-project-continuity/  项目延续手册（背景/方法/数据/AI交接/任务清单）
+08-data-reviews/        数据复盘报告（按日期归档）
+09-scripts/             Python工具脚本
+.agents/skills/         AI技能文档（data-review/network-setup/playwright-cli/playwright-extension）
+archive/                归档目录（07-homework/、09-screenshots/）
 ```
 
 ## 常用命令
